@@ -1,11 +1,12 @@
 import { GRAY, LIGHTGRAY, ORANGE } from "../../Utils"
 import Button from "../Button/Button"
+import Input from "../Input/Input"
 import { StyledButtonsLayout, StyledInputLayout, StyledLayout } from "./Layout.styled"
 
 const Layout = () => {
     return <StyledLayout>
         <StyledInputLayout>
-            0
+            <Input/>
         </StyledInputLayout>
         <StyledButtonsLayout>
             <Button color={GRAY} bgColor={LIGHTGRAY}>AC</Button>

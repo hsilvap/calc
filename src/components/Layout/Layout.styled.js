@@ -10,7 +10,8 @@ export const StyledLayout = styled.div`
 `
 export const StyledInputLayout = styled.div`
     display: flex;
-    aling-items: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
 `
 
 export const StyledButtonsLayout = styled.div`
