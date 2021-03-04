@@ -4,8 +4,9 @@ export const StyledLayout = styled.div`
     display: grid;
     grid-template-rows: 1fr 2fr;
     background-color:black;
-    width: 250px;
-    height: 400px;
+    min-width: 375px;
+    height: 812px;
+    padding: 15px 20px;
 `
 export const StyledInputLayout = styled.div`
     display: flex;
@@ -15,7 +16,7 @@ export const StyledInputLayout = styled.div`
 export const StyledButtonsLayout = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.3em;
+    grid-gap: 15px;
     width: 100%;
     height: 100%
 `
