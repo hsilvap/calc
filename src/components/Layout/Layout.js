@@ -6,30 +6,29 @@ import { StyledButtonsLayout, StyledInputLayout, StyledLayout } from "./Layout.s
 const Layout = () => {
     return <StyledLayout>
         <StyledInputLayout>
-            <Input/>
+            <Input />
         </StyledInputLayout>
         <StyledButtonsLayout>
-            <Button color={GRAY} bgColor={LIGHTGRAY}>AC</Button>
-            <Button color={GRAY} bgColor={LIGHTGRAY}>±</Button>
-            <Button color={GRAY} bgColor={LIGHTGRAY}>%</Button>
-            <Button bgColor={ORANGE}>÷</Button>
-            <Button>7</Button>
-            <Button>8</Button>
-            <Button>9</Button>
-            <Button bgColor={ORANGE}>x</Button>
-            <Button>4</Button>
-            <Button>5</Button>
-            <Button>6</Button>
-            <Button bgColor={ORANGE}>-</Button>
-            <Button>1</Button>
-            <Button>2</Button>
-            <Button>3</Button>
-            <Button bgColor={ORANGE}>+</Button>
-            <Button>0</Button>
-            <Button>0</Button>
-            <Button>.</Button>
-            <Button bgColor={ORANGE}>=</Button>
-
+            <Button color={GRAY} bgColor={LIGHTGRAY} value={'AC'} />
+            <Button color={GRAY} bgColor={LIGHTGRAY} value={'±'} />
+            <Button color={GRAY} bgColor={LIGHTGRAY} value={'%'} />
+            <Button bgColor={ORANGE} value={'÷'} />
+            <Button value={'7'} />
+            <Button value={'8'} />
+            <Button value={'9'} />
+            <Button bgColor={ORANGE} value={'x'} />
+            <Button value={'4'} />
+            <Button value={'5'} />
+            <Button value={'6'} />
+            <Button bgColor={ORANGE} value={'-'} />
+            <Button value={'1'} />
+            <Button value={'2'} />
+            <Button value={'3'} />
+            <Button bgColor={ORANGE} value={'+'} />
+            <Button value={'0'} />
+            <Button value={'0'} />
+            <Button value={'.'} />
+            <Button bgColor={ORANGE} value={'='} />
         </StyledButtonsLayout>
     </StyledLayout>
 }

@@ -1,7 +1,7 @@
 import { StyledInput } from "./Input.styled"
 
 const Input = () => {
-    return <StyledInput value="132">
+    return <StyledInput>
         12332
     </StyledInput>
 }
