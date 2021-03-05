@@ -3,9 +3,10 @@ import { StoreReducer } from './reducer';
 
 export const initialState = {
     operation: '',
-    firstValue: 0,
-    secondValue: 0,
-    result: 0
+    displayValue: '0',
+    firstValue: '',
+    secondValue: '',
+    result: '',
 }
 
 export const StoreContext = React.createContext();
