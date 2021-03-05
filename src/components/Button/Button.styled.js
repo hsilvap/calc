@@ -12,8 +12,20 @@ export const StyledButton = styled.button`
     color: ${props => props.color ? props.color : props.active ? ORANGE : 'white'};
     border-radius: 50%;
     font-size: 2em;
-    ${({ gridArea }) => gridArea && `grid-area: ${gridArea}; border-radius: 60px; width: 100%; padding-right: 115px; `}
-    
+
+    @media (max-width: 768px) {
+        height: 75px;
+        width: 75px;
+    }
+
+    ${({ gridArea }) => gridArea && `grid-area: ${gridArea}; border-radius: 60px; width: 100%; padding-right: 115px; 
+        @media (max-width: 768px) {
+            height: 75px;
+            width: 100%;
+            padding-right: 90px; 
+        }
+    `}
+  
     &:active {
         filter: brightness(120%);
     }
