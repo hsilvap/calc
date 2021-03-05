@@ -12,6 +12,8 @@ export const StyledButton = styled.button`
     color: ${props => props.color ? props.color : props.active ? ORANGE : 'white'};
     border-radius: 50%;
     font-size: 2em;
+    ${({ gridArea }) => gridArea && `grid-area: ${gridArea}; border-radius: 60px; width: 100%; padding-right: 115px; `}
+    
     &:active {
         filter: brightness(120%);
     }

@@ -29,8 +29,7 @@ const Layout = () => {
             <Button value={'2'} />
             <Button value={'3'} />
             <Button bgColor={ORANGE} value={'+'} active={state.operation === '+' && state.secondValue === ''} />
-            <Button value={'0'} />
-            <Button value={'0'} />
+            <Button value={'0'} gridArea={'cero'} />
             <Button value={'.'} />
             <Button bgColor={ORANGE} value={'='} />
         </StyledButtonsLayout>
