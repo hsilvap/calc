@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # First steps
-Clone the repo
+Clone the repo, then: \
+
 Run `npm install`
 Run `npm start`
 ## Available Scripts
