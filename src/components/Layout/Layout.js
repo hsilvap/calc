@@ -7,7 +7,6 @@ import { StyledButtonsLayout, StyledInputLayout, StyledLayout } from "./Layout.s
 
 const Layout = () => {
     const { state } = useContext(StoreContext)
-    console.log(state)
     const getClearBtnValue = () => {
         if(state.firstValue !== '') {
             return 'C'
@@ -19,7 +18,7 @@ const Layout = () => {
         return state.operation === operation && state.secondValue === ''
     }
 
-    return <StyledLayout>
+    return <StyledLayout data-test-id="layout">
         <StyledInputLayout>
             <Input />
         </StyledInputLayout>
