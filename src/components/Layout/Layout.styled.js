@@ -4,7 +4,6 @@ export const StyledLayout = styled.div`
     display: grid;
     grid-template-rows: 1fr 2fr;
     background-color:black;
-    min-width: 375px;
     height: 812px;
     padding: 15px 20px;
 `
