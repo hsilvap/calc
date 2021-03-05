@@ -44,8 +44,12 @@ const Button = ({ value, ...props }) => {
             }
             default: {
                 //this is the limit on the iOS calculator
-                if (state.displayValue.length === 9)
+                if (state.displayValue.length === 9 && state.operation === '') {
                     return
+                }
+                if (state.displayValue.length === 9 && state.operation !== '' && state.secondValue !== '') {
+                    return
+                }
                 dispatch({ type: StoreActions.TAP, data: { value } })
                 break
             }
