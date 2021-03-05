@@ -7,6 +7,9 @@ Clone the repo, then:
 
 1. Run `npm install` 
 2. Run `npm start`
+
+Dont want to clone it? go  [here](https://hsilvap.github.io/calc/)
+
 ## Available Scripts
 
 In the project directory, you can run:
