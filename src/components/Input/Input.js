@@ -1,30 +1,35 @@
-import { useContext } from "react"
-import { StoreContext } from "../../context/store"
-import { StyledInput } from "./Input.styled"
+import { useContext } from 'react'
+import { StoreContext } from '../../context/store'
+import { StyledInput } from './Input.styled'
 
 const Input = () => {
-    const { state } = useContext(StoreContext)
+  const { state } = useContext(StoreContext)
 
-    const formatResult = (amount) => {
-        if (amount === undefined)
-            return
+  const formatResult = (amount) => {
+    if (amount === undefined) return
 
-        let amountStr = amount.toString()
-        if (amount < 0) {
-            if (amountStr.length > 10) {
-                return amount.toFixed(10)
-            }
-        } else {
-            if (amountStr.length > 9) {
-                return +amountStr.substring(0, 9)
-            }
-        }
-        return amount
+    let amountStr = amount.toString()
+    if (amount < 0) {
+      if (amountStr.length > 10) {
+        return amount.toFixed(10)
+      }
+    } else {
+      if (amountStr.length > 9) {
+        return +amountStr.substring(0, 9)
+      }
     }
+    return amount
+  }
 
-    return <StyledInput data-testid="calculator-input">
-        {state && state.displayValue && state.displayValue !== 'Error' ? new Intl.NumberFormat(undefined, { maximumFractionDigits: 12 }).format(formatResult(state.displayValue)) : state.displayValue}
+  return (
+    <StyledInput data-testid="calculator-input">
+      {state && state.displayValue && state.displayValue !== 'Error'
+        ? new Intl.NumberFormat(undefined, {
+            maximumFractionDigits: 12
+          }).format(formatResult(state.displayValue))
+        : state.displayValue}
     </StyledInput>
+  )
 }
 
 export default Input
