@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# First steps
+Clone the repo
+Run `npm install`
+Run `npm start`
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,6 +33,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm deploy`
+Builds the app for production to the `build` folder.\
+Then deploys it to https://hsilvap.github.io/calc/
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -39,6 +47,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### `npm deploy`
-Builds the app for production to the `build` folder.\
-Then deploys it to https://hsilvap.github.io/calc/
