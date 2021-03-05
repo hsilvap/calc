@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
 export const StyledInput = styled.div`
-    font-size:100px;
+    font-size: 75px;
     color: white;
 `
