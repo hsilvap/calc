@@ -3,10 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # First steps
-Clone the repo, then: \
+Clone the repo, then: 
 
-Run `npm install`
-Run `npm start`
+1. Run `npm install` 
+2. Run `npm start`
 ## Available Scripts
 
 In the project directory, you can run:
