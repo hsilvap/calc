@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/calc%20/static/css/main.77161e82.chunk.css",
-    "main.js": "/calc%20/static/js/main.b6570cab.chunk.js",
-    "main.js.map": "/calc%20/static/js/main.b6570cab.chunk.js.map",
-    "runtime-main.js": "/calc%20/static/js/runtime-main.1f559fd3.js",
-    "runtime-main.js.map": "/calc%20/static/js/runtime-main.1f559fd3.js.map",
-    "static/js/2.e8f9adce.chunk.js": "/calc%20/static/js/2.e8f9adce.chunk.js",
-    "static/js/2.e8f9adce.chunk.js.map": "/calc%20/static/js/2.e8f9adce.chunk.js.map",
-    "static/js/3.ed6213a9.chunk.js": "/calc%20/static/js/3.ed6213a9.chunk.js",
-    "static/js/3.ed6213a9.chunk.js.map": "/calc%20/static/js/3.ed6213a9.chunk.js.map",
-    "index.html": "/calc%20/index.html",
-    "static/css/main.77161e82.chunk.css.map": "/calc%20/static/css/main.77161e82.chunk.css.map",
-    "static/js/2.e8f9adce.chunk.js.LICENSE.txt": "/calc%20/static/js/2.e8f9adce.chunk.js.LICENSE.txt"
+    "main.css": "/calc/static/css/main.77161e82.chunk.css",
+    "main.js": "/calc/static/js/main.b6570cab.chunk.js",
+    "main.js.map": "/calc/static/js/main.b6570cab.chunk.js.map",
+    "runtime-main.js": "/calc/static/js/runtime-main.aaf167bc.js",
+    "runtime-main.js.map": "/calc/static/js/runtime-main.aaf167bc.js.map",
+    "static/js/2.e8f9adce.chunk.js": "/calc/static/js/2.e8f9adce.chunk.js",
+    "static/js/2.e8f9adce.chunk.js.map": "/calc/static/js/2.e8f9adce.chunk.js.map",
+    "static/js/3.ed6213a9.chunk.js": "/calc/static/js/3.ed6213a9.chunk.js",
+    "static/js/3.ed6213a9.chunk.js.map": "/calc/static/js/3.ed6213a9.chunk.js.map",
+    "index.html": "/calc/index.html",
+    "static/css/main.77161e82.chunk.css.map": "/calc/static/css/main.77161e82.chunk.css.map",
+    "static/js/2.e8f9adce.chunk.js.LICENSE.txt": "/calc/static/js/2.e8f9adce.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f559fd3.js",
+    "static/js/runtime-main.aaf167bc.js",
     "static/js/2.e8f9adce.chunk.js",
     "static/css/main.77161e82.chunk.css",
     "static/js/main.b6570cab.chunk.js"
