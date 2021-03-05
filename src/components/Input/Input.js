@@ -23,7 +23,7 @@ const Input = () => {
     }
 
     return <StyledInput data-testid="calculator-input">
-        {state.displayValue !== 'Error' ? new Intl.NumberFormat(undefined, { maximumFractionDigits: 12 }).format(formatResult(state.displayValue)) : state.displayValue}
+        {state && state.displayValue && state.displayValue !== 'Error' ? new Intl.NumberFormat(undefined, { maximumFractionDigits: 12 }).format(formatResult(state.displayValue)) : state.displayValue}
     </StyledInput>
 }
 
