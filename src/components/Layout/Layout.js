@@ -8,9 +8,9 @@ import { StyledButtonsLayout, StyledInputLayout, StyledLayout } from "./Layout.s
 const Layout = () => {
     const { state } = useContext(StoreContext)
     const getClearBtnValue = () => {
-        if(state.firstValue !== '') {
+        if (state.firstValue !== '') {
             return 'C'
-        }else{
+        } else {
             return 'AC'
         }
     }
@@ -18,11 +18,11 @@ const Layout = () => {
         return state.operation === operation && state.secondValue === ''
     }
 
-    return <StyledLayout data-test-id="layout">
-        <StyledInputLayout>
+    return <StyledLayout data-testid="layout">
+        <StyledInputLayout data-testid="input-layout">
             <Input />
         </StyledInputLayout>
-        <StyledButtonsLayout>
+        <StyledButtonsLayout data-testid="buttons-layout">
             <Button color={GRAY} bgColor={LIGHTGRAY} value={getClearBtnValue()} />
             <Button color={GRAY} bgColor={LIGHTGRAY} value={'±'} />
             <Button color={GRAY} bgColor={LIGHTGRAY} value={'%'} />
@@ -30,7 +30,7 @@ const Layout = () => {
             <Button value={'7'} />
             <Button value={'8'} />
             <Button value={'9'} />
-            <Button bgColor={ORANGE} value={'x'} active={isActive('x')}  />
+            <Button bgColor={ORANGE} value={'x'} active={isActive('x')} />
             <Button value={'4'} />
             <Button value={'5'} />
             <Button value={'6'} />
@@ -38,7 +38,7 @@ const Layout = () => {
             <Button value={'1'} />
             <Button value={'2'} />
             <Button value={'3'} />
-            <Button bgColor={ORANGE} value={'+'} active={isActive('+')}  />
+            <Button bgColor={ORANGE} value={'+'} active={isActive('+')} />
             <Button value={'0'} gridArea={'cero'} />
             <Button value={'.'} />
             <Button bgColor={ORANGE} value={'='} />

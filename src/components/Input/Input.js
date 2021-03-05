@@ -6,6 +6,9 @@ const Input = () => {
     const { state } = useContext(StoreContext)
 
     const formatResult = (amount) => {
+        if (!amount)
+            return
+
         let amountStr = amount.toString()
         if (amount < 0) {
             if (amountStr.length > 10) {
@@ -19,7 +22,7 @@ const Input = () => {
         return amount
     }
 
-    return <StyledInput>
+    return <StyledInput data-testid="calculator-input">
         {state.displayValue !== 'Error' ? new Intl.NumberFormat(undefined, { maximumFractionDigits: 12 }).format(formatResult(state.displayValue)) : state.displayValue}
     </StyledInput>
 }
