@@ -32,7 +32,6 @@ export function StoreReducer(state, action) {
                     return { ...state, secondValue: current, displayValue: current }
                 }
             }
-            break
         }
         case StoreActions.ADD: {
             const { firstValue, secondValue } = state

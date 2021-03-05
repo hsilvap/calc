@@ -36,7 +36,7 @@ function Multiply(input, secondInput) {
 function Divide(input, secondInput) {
     const pInput = parseFloat(input)
     const pSecondInput = parseFloat(secondInput)
-    if (pSecondInput == 0)
+    if (pSecondInput === 0)
         return 'Error'
     return pInput / pSecondInput
 }
