@@ -6,7 +6,7 @@ const Input = () => {
     const { state } = useContext(StoreContext)
 
     const formatResult = (amount) => {
-        if (!amount)
+        if (amount === undefined)
             return
 
         let amountStr = amount.toString()

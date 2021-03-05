@@ -67,10 +67,10 @@ export function StoreReducer(state, action) {
         case StoreActions.CLEAR: {
             const { firstValue, secondValue } = state
             if (secondValue !== '') {
-                return { ...state, displayValue: '', secondValue: '' }
+                return { ...state, displayValue: '0', secondValue: '0' }
             }
             if (firstValue !== '') {
-                return { ...state, displayValue: '', firstValue: '' }
+                return { ...state, displayValue: '0', firstValue: '0' }
             }
             break;
         }
