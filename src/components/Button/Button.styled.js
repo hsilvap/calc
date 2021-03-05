@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { GRAY } from '../../Utils'
+import { GRAY, ORANGE } from '../../Utils'
 
 export const StyledButton = styled.button`
     display: flex;
@@ -7,9 +7,9 @@ export const StyledButton = styled.button`
     justify-content: center;
     height: 100px;
     width: 100px;
-    background-color: ${props => props.bgColor ? props.bgColor : GRAY};
-    border: solid 1px ${props => props.bgColor ? props.bgColor : GRAY};
-    color: ${props => props.color ? props.color : 'white'};
+    background-color: ${props => props.active ? 'white' : props.bgColor ? props.bgColor : GRAY};
+    border: solid 1px  ${props => props.active ? 'white' : props.bgColor ? props.bgColor : GRAY};
+    color: ${props => props.color ? props.color : props.active ? ORANGE : 'white'};
     border-radius: 50%;
     font-size: 2em;
     &:active {
