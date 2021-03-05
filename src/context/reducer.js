@@ -12,6 +12,18 @@ export const StoreActions = {
     RESULT: 'RESULT',
 }
 
+const doOperation = (state, operationToDo) => {
+    const { firstValue, secondValue, displayValue } = state
+    if (firstValue !== '' && secondValue !== '') {
+        const result = Calculate(operationToDo, firstValue, secondValue)
+        return { ...state, operation: operationToDo, firstValue: result, secondValue: '', displayValue: result }
+    }
+    if (firstValue === '' && displayValue !== '') {
+        return { ...state, operation: operationToDo, firstValue: displayValue }
+    }
+    return { ...state, operation: operationToDo }
+}
+
 export function StoreReducer(state, action) {
     switch (action.type) {
         case StoreActions.TAP: {
@@ -34,36 +46,16 @@ export function StoreReducer(state, action) {
             }
         }
         case StoreActions.ADD: {
-            const { firstValue, secondValue } = state
-            if (firstValue !== '' && secondValue !== '') {
-                const result = Calculate('+', firstValue, secondValue)
-                return { ...state, operation: '+', firstValue: result, secondValue: '', displayValue: result }
-            }
-            return { ...state, operation: '+' }
+            return doOperation(state, '+')
         }
         case StoreActions.SUBSTRACT: {
-            const { firstValue, secondValue } = state
-            if (firstValue !== '' && secondValue !== '') {
-                const result = Calculate('-', firstValue, secondValue)
-                return { ...state, operation: '-', firstValue: result, secondValue: '', displayValue: result }
-            }
-            return { ...state, operation: '-' }
+            return doOperation(state, '-')
         }
         case StoreActions.MULTIPLY: {
-            const { firstValue, secondValue } = state
-            if (firstValue !== '' && secondValue !== '') {
-                const result = Calculate('x', firstValue, secondValue)
-                return { ...state, operation: 'x', firstValue: result, secondValue: '', displayValue: result }
-            }
-            return { ...state, operation: 'x' }
+            return doOperation(state, 'x')
         }
         case StoreActions.DIVIDE: {
-            const { firstValue, secondValue } = state
-            if (firstValue !== '' && secondValue !== '') {
-                const result = Calculate('÷', firstValue, secondValue)
-                return { ...state, operation: '÷', firstValue: result, secondValue: '', displayValue: result }
-            }
-            return { ...state, operation: '÷' }
+            return doOperation(state, '÷')
         }
         case StoreActions.RESULT: {
             const { operation, firstValue, secondValue } = state
