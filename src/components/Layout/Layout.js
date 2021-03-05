@@ -7,7 +7,14 @@ import { StyledButtonsLayout, StyledInputLayout, StyledLayout } from "./Layout.s
 
 const Layout = () => {
     const { state } = useContext(StoreContext)
-
+    console.log(state)
+    const getClearBtnValue = () => {
+        if(state.firstValue !== '') {
+            return 'C'
+        }else{
+            return 'AC'
+        }
+    }
     const isActive = (operation) => {
         return state.operation === operation && state.secondValue === ''
     }
@@ -17,7 +24,7 @@ const Layout = () => {
             <Input />
         </StyledInputLayout>
         <StyledButtonsLayout>
-            <Button color={GRAY} bgColor={LIGHTGRAY} value={'AC'} />
+            <Button color={GRAY} bgColor={LIGHTGRAY} value={getClearBtnValue()} />
             <Button color={GRAY} bgColor={LIGHTGRAY} value={'±'} />
             <Button color={GRAY} bgColor={LIGHTGRAY} value={'%'} />
             <Button bgColor={ORANGE} value={'÷'} active={isActive('÷')} />

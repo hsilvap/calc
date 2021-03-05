@@ -6,18 +6,20 @@ import { StyledButton } from "./Button.styled"
 const Button = ({ value, ...props }) => {
     const { dispatch, state } = useContext(StoreContext)
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         switch (value) {
             case 'AC': {
+                dispatch({ type: StoreActions.CLEAR_ALL })
+                break
+            }
+            case 'C': {
                 dispatch({ type: StoreActions.CLEAR })
                 break
             }
             case '±': {
-                dispatch({ type: StoreActions.CLEAR })
                 break
             }
             case '%': {
-                dispatch({ type: StoreActions.CLEAR })
                 break
             }
             case '÷': {
@@ -41,6 +43,7 @@ const Button = ({ value, ...props }) => {
                 break
             }
             default: {
+                //this is the limit on the iOS calculator
                 if (state.displayValue.length === 9)
                     return
                 dispatch({ type: StoreActions.TAP, data: { value } })
